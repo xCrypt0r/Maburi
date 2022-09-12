@@ -1,0 +1,72 @@
+{
+  "name": "Maburi",
+  "author": "xCrypt0r",
+  "version": "1.0.0",
+  "description": "Hack for get Netmarble user's real name",
+  "license": "MIT",
+  "homepage": ".",
+  "main": "build/electron/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron:dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && tsc -w -p electron\" \"wait-on http://localhost:3000 && tsc -p electron && electron .\"",
+    "electron:build": "npm run build && tsc -p electron && electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.6.3",
+    "mobx": "^6.6.2",
+    "mobx-react": "^7.5.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.249",
+    "@types/electron": "^1.6.10",
+    "@types/node": "^18.7.16",
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
+    "@types/request": "^2.48.8",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "concurrently": "^7.4.0",
+    "cross-env": "^7.0.3",
+    "electron": "^20.1.3",
+    "electron-builder": "^23.3.3",
+    "eslint": "^8.23.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.8.3",
+    "wait-on": "^6.0.1"
+  },
+  "build": {
+    "productName": "Maburi",
+    "appId": "com.electron.maburi",
+    "files": [
+      "assets",
+      "build",
+      "public",
+      "package.json"
+    ],
+    "win": {
+      "icon": "assets/icons/icon-256x256"
+    },
+    "directories": {
+      "buildResources": "assets"
+    },
+    "extends": null
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version" 
+    ]
+  }
+}

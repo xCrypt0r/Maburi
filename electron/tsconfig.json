@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",                                 
+      "module": "CommonJS",
+      "rootDir": "../",
+      "outDir": "../build",
+      "strict": true,
+      "strictNullChecks": false,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "noImplicitAny": false,
+      "noEmitOnError": true,
+      "typeRoots": [
+        "node_modules/@types",
+        "electron/@types"
+      ]
+    },
+    "ts-node": {
+      "swc": true
+    }
+  }
+  
