@@ -5,7 +5,7 @@ import type {
     UserName,
     ApiCallData,
     PostOptions
-} from './base/types';
+} from '../base/types';
 import {
     USERNAME_NOT_APPLICABLE,
     REGEX_TRUTHY_PREFIX,
@@ -13,7 +13,7 @@ import {
     EMPTY_STRING,
     DEFAULT_API_CALL_DATA,
     DEFAULT_POST_OPTIONS
-} from './base/constants';
+} from '../base/constants';
 
 const asyncPost = promisify(request.post);
 

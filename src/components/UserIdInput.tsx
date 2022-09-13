@@ -1,5 +1,5 @@
 import { useEffect, KeyboardEvent } from 'react';
-import useStore from '../useStore';
+import useStore from '../utils/useStore';
 import {
     USERNAME_PLACEHOLDER,
     EMPTY_STRING,

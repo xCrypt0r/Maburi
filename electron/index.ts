@@ -1,7 +1,7 @@
 import { app, ipcMain, BrowserWindow } from 'electron';
 import type { IpcMainEvent } from 'electron';
 import path from 'path';
-import getName from '../src/getName';
+import getName from '../src/utils/getName';
 
 let mainWindow: BrowserWindow | null;
 

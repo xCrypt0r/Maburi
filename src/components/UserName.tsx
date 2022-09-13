@@ -1,5 +1,5 @@
 import { Observer } from 'mobx-react';
-import useStore from '../useStore';
+import useStore from '../utils/useStore';
 
 export default function UserName() {
     const { userName } = useStore();
