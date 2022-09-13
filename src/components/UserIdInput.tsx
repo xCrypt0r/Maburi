@@ -5,7 +5,7 @@ import {
     EMPTY_STRING,
     KEYS
 } from '../constants';
-import './UserInput.css';
+import './UserIdInput.css';
 
 export default function UserIdInput() {
     const { userName } = useStore();
