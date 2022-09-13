@@ -4,7 +4,7 @@ import {
     USERNAME_PLACEHOLDER,
     EMPTY_STRING,
     KEYS
-} from '../constants';
+} from '../base/constants';
 import './UserIdInput.css';
 
 export default function UserIdInput() {

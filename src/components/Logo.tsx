@@ -1,4 +1,4 @@
-import { LOGO_ALTERNATIVE_TEXT } from '../constants';
+import { LOGO_ALTERNATIVE_TEXT } from '../base/constants';
 
 export default function Logo() {
     return (
