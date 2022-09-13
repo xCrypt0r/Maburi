@@ -1,8 +1,8 @@
 export type UserName = Promise<string>;
 
 export type ApiCallData = {
-    callType: string;
-    channelCode: string;
+    callType: 'findFriend';
+    channelCode: 'NM';
     id: string;
 };
 
