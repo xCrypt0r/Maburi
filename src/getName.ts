@@ -20,7 +20,7 @@ const asyncPost = promisify(request.post);
 export default async function getName(id: string): UserName {
     let data: ApiCallData = {
         ...DEFAULT_API_CALL_DATA,
-        id
+        id: encodeURIComponent(id)
     };
     let options: PostOptions = {
         ...DEFAULT_POST_OPTIONS,
